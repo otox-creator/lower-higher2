@@ -1,8 +1,7 @@
 let freq = 0
 let lastnote = 0
 let note = 60
-basic.forever(function on_forever() {
-    
+basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         lastnote = note
         note = lastnote + 1
@@ -16,5 +15,4 @@ basic.forever(function on_forever() {
     } else {
         control.waitMicros(1)
     }
-    
 })
